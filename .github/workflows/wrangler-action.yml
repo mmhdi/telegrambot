@@ -1,0 +1,22 @@
+name: Wrangler Action
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    name: Deploy
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Deploy
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: "rjngH5SZBEWOQ_2QQqW_pKOuBexP648KswOq1wnf"
+          accountId: "a039a33e88a5774b0cd471632c690b54"
+          wranglerVersion: "3.10.1"
+          packageManager: "npm"
+          

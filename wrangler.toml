@@ -1,4 +1,4 @@
-name = "wordpress-plugins"
+name = "bots"
 main = "./index.js"
 compatibility_date = "2023-08-15"
 node_compat = true
